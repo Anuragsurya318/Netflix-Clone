@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, rgb(22, 22, 22), transparent, black), url('Bg_Image.png');
+    /* background: radial-gradient(transparent, transparent); */
+    /* background-blend-mode: darken; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 8px solid #222;
+}
+
+ul {
+    /* border: .5px solid red; */
+    height: fit-content;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+    margin: 3vw;
+    margin-top: 18px;
+}
+
+li:nth-child(1) {
+    margin: 3vw;
+    font-size: 2.2rem;
+    margin-top: 18px;
+    color: #e50914;
+    font-weight: bold;
+}
+
+.sign_in {
+    color: white;
+    background-color: #e50914;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    position: relative;
+    right: 20px;
+}
+
+.english {
+    background-color: transparent;
+    border: .1px solid white;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 3px;
+    position: relative;
+    right: -15px;
+}
+
+.icons_spacing {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.heading2 {
+    padding: 15px;
+    font-size: 1.625rem;
+}
+
+.heading3 {
+    padding: 12px;
+    font-size: 1.2rem;
+}
+
+.search {
+    padding: 8px 5px;
+}
+
+.inner_search {
+    font-size: 1rem;
+    padding: 18px 5px;
+    border: none;
+    border-radius: 1px;
+    width: 40vw;
+}
+
+.inner_btn {
+    background-color: #e50914;
+    color: white;
+    padding: 18px 5px;
+    border: none;
+    border-radius: 1px;
+    width: 14vw;
+    font-size: 1rem;
+    margin-top: 7px;
+}
+
+.search_bar {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    font-size: 3.125rem;
+}
+
+.video_wala_part {
+    /* border: 2px solid white; */
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px 100px;
+    color: white;
+    border-bottom: 8px solid #222;
+}
+
+.video_wala_part h1 {
+    padding-bottom: 20px;
+}
+
+.left_side {
+    font-size: 1.625rem;
+}
+
+.stranger_things_part {
+    display: flex;
+    background-color: black;
+    color: white;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 50px;
+    border-bottom: 8px solid #222;
+}
+
+.stranger_things_part p {
+    padding-top: 20px;
+    font-size: 1.625rem;
+}
+
+.children_part {
+    display: flex;
+    background-color: black;
+    color: white;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 70px;
+    border-bottom: 8px solid #222;
+    padding-left: 170px;
+}
+
+.children_content {
+    width: 50%;
+}
+
+.children_part p {
+    padding-top: 20px;
+    font-size: 1.625rem;
+}
+
+.main_accordian {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    padding: 60px 20px;
+    background-color: black;
+    color: white;
+    padding-bottom: 10px;
+}
+.main_ke_bahar_ka_accordian{
+    background-color: black ;
+}
+.main_ke_bahar_ka_accordian h2{
+    padding-bottom: 30px;
+    font-size: 3.125rem;
+}
+
+.accordion {
+    background: #303030;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.625rem;
+    transition: 0.4s;
+    margin: 6px 0px;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background: #303030;
+    color: white;
+    overflow: hidden;
+    float: left;
+    padding: 30px;
+    font-size: 1.125rem;
+}
+td{
+    padding: 13px 30px;
+}
+.footer_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    border-top: 8px solid #222;
+    padding-bottom: 30px;
+}
+.footer_main h2{
+padding: 35px 20px;
+}
+.footer{
+    display: inline-block;
+}
+
+@media screen and (max-width:500px) {
+    .english {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .heading2 {
+        font-size: 1.2rem;
+    }
+
+    .heading3 {
+        font-size: 0.6rem;
+    }
+
+    .inner_btn {
+        font-size: 0.6rem;
+    }
+    .main_ke_bahar_ka_accordian h2{
+        font-size: 0.125rem;
+    }
+    .main_ke_bahar_ka_accordian{
+        border-bottom: 8px solid #222;
+    }
+    .logo{
+        padding-left: 16px;
+        padding-top: 5px;
+    }
+}
+@media screen and (max-width:600px){
+    .footer_main{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1076px) {
+    .video_wala_part {
+        flex-direction: column;
+        padding: 30px 50px;
+    }
+
+    .left_side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left_side p {
+        font-size: 0.6rem;
+    }
+
+    .stranger_things_part {
+        flex-direction: column-reverse;
+    }
+
+    .stranger_things_part h1 {
+        font-size: 1.2rem;
+    }
+
+    .stranger_things_part p {
+        font-size: 0.6rem;
+    }
+
+    .children_part {
+        flex-direction: column;
+        padding: 30px 70px;
+    }
+
+    .children_part h1 {
+        font-size: 1.2rem;
+    }
+
+    .children_content {
+        width: 90%;
+    }
+
+    .children_part p {
+        font-size: 0.6rem;
+    }
+    .main_ke_bahar_ka_accordian h2{
+        font-size: 1.725rem;
+    }
+    .main_accordian{
+        width: 90%;
+    }
+    .accordion{
+        width: 100%;
+        font-size: 0.825rem;
+    }
+    .panel{
+        font-size: 0.525rem;
+        padding: 15px;
+    }
+
+}
